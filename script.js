@@ -85,7 +85,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
 const showLoadingAnimation = () => {
   // DeepSeek ලාංඡනය සමග අයිකනයක් භාවිතා කරන්න (අවශ්ය නම් වෙනස් කරන්න)
   const html = `<div class="message-content">
-                  <img class="avatar" src="images/deepseek-logo.png" alt="DeepSeek avatar">
+                  <img class="avatar" src="images/2.png" alt="DeepSeek avatar">
                   <p class="text"></p>
                   <div class="loading-indicator">
                     <div class="loading-bar"></div>
@@ -113,7 +113,7 @@ const handleOutgoingChat = () => {
   
   isResponseGenerating = true;
   const html = `<div class="message-content">
-                  <img class="avatar" src="images/user.jpg" alt="User avatar">
+                  <img class="avatar" src="images/user.png" alt="User avatar">
                   <p class="text"></p>
                 </div>`;
   const outgoingMessageDiv = createMessageElement(html, "outgoing");
@@ -153,3 +153,4 @@ typingForm.addEventListener("submit", (e) => {
 });
 
 loadDataFromLocalstorage();
+
